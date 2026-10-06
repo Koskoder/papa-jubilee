@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>С юбилеем, папа!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+<div class="show" id="show">
+
+  <!-- Слайд 1 — статичный -->
+  <div class="slide active" id="slide-1">
+    <div class="slide-inner" style="background-image: url('images/1.png')"></div>
+  </div>
+
+  <!-- Слайд 2 — шторка справа-налево -->
+  <div class="slide" id="slide-2">
+    <div class="slide-inner" style="background-image: url('images/2.webp')"></div>
+  </div>
+
+  <!-- Слайд 3 — шторка сверху-вниз -->
+  <div class="slide" id="slide-3">
+    <div class="slide-inner" style="background-image: url('images/3.png')"></div>
+  </div>
+
+  <!-- Слайд 4 — дверь (две створки) -->
+  <div class="slide" id="slide-4">
+    <div class="slide-inner" style="background-image: url('images/4.jpg')"></div>
+  </div>
+
+  <!-- Слайд 5 — соты -->
+  <div class="slide" id="slide-5">
+    <div class="slide-inner" style="background-image: url('images/5.webp')"></div>
+  </div>
+
+  <!-- Слайд 6 — круг из центра -->
+  <div class="slide" id="slide-6">
+    <div class="slide-inner" style="background-image: url('images/6.webp')"></div>
+  </div>
+
+  <!-- Слайд 7 — круговые лепестки (iris) -->
+  <div class="slide" id="slide-7">
+    <div class="slide-inner" style="background-image: url('images/7.webp')"></div>
+  </div>
+
+  <!-- Слайд 8 — диагональная шторка -->
+  <div class="slide" id="slide-8">
+    <div class="slide-inner" style="background-image: url('images/8.jpg')"></div>
+  </div>
+
+  <!-- Слайд 9 — жалюзи (горизонтальные полосы) -->
+  <div class="slide" id="slide-9">
+    <div class="slide-inner" style="background-image: url('images/9.jpg')"></div>
+  </div>
+
+  <!-- Слайд 10 — шахматный порядок -->
+  <div class="slide" id="slide-10">
+    <div class="slide-inner" style="background-image: url('images/10.webp')"></div>
+  </div>
+
+  <!-- Слайд 11 — ромашка (радиальные лепестки) -->
+  <div class="slide" id="slide-11">
+    <div class="slide-inner" style="background-image: url('images/11.jpg')"></div>
+  </div>
+
+  <!-- Слайд 12 — сдвиг блоками 3×3 -->
+  <div class="slide" id="slide-12">
+    <div class="slide-inner" style="background-image: url('images/12.jpg')"></div>
+  </div>
+
+  <!-- Слайд 13 — спираль -->
+  <div class="slide" id="slide-13">
+    <div class="slide-inner" style="background-image: url('images/13.jpg')"></div>
+  </div>
+
+  <!-- Слайд 14 — молния / зигзаг -->
+  <div class="slide" id="slide-14">
+    <div class="slide-inner" style="background-image: url('images/14.jpg')"></div>
+  </div>
+
+  <!-- Слайд 15 — ромб из центра -->
+  <div class="slide" id="slide-15">
+    <div class="slide-inner" style="background-image: url('images/15.jpg')"></div>
+  </div>
+
+  <!-- Слайд 16 — волна снизу -->
+  <div class="slide" id="slide-16">
+    <div class="slide-inner" style="background-image: url('images/16.jpg')"></div>
+  </div>
+
+  <!-- Слайд 17 — свечение-вспышка -->
+  <div class="slide" id="slide-17">
+    <div class="slide-inner" style="background-image: url('images/17.jpg')"></div>
+  </div>
+
+  <!-- Слайд 18 — сжатие по горизонтали -->
+  <div class="slide" id="slide-18">
+    <div class="slide-inner" style="background-image: url('images/18.webp')"></div>
+  </div>
+
+  <!-- Слайд 19 — размытие-проявление -->
+  <div class="slide" id="slide-19">
+    <div class="slide-inner" style="background-image: url('images/19.webp')"></div>
+  </div>
+
+  <!-- Финальный текстовый слайд -->
+  <div class="slide slide-final" id="slide-20">
+    <div class="final-text">
+      <h1 class="final-title">Папа, с днём рождения!</h1>
+      <p class="final-line">Ты у нас такой надёжный и заботливый — рядом с тобой всегда спокойно, и это очень много значит.</p>
+      <p class="final-line">Пусть впереди будет много хороших, размеренных дней, когда всё идёт своим чередом, а поводов для радости только прибавляется.</p>
+      <p class="final-line">Желаю, чтобы хватало сил на всё важное, а мелочи не забирали нервы.</p>
+      <p class="final-line final-love">Люблю тебя!</p>
+    </div>
+  </div>
+
+  <!-- Кнопка Play -->
+  <button class="play-btn" id="playBtn" aria-label="Запустить">
+    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="35,25 35,75 78,50" fill="currentColor"/>
+    </svg>
+  </button>
+
+</div>
+
+<audio id="audio" src="audio/song.mp3" preload="auto"></audio>
+
+<script src="scripts/script.js"></script>
+</body>
+</html>
